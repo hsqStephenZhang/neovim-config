@@ -32,7 +32,5 @@
 		}
 	    }
 	}
-    },
-    "rust-analyzer.checkOnSave.allTargets": false,
-    "rust-analyzer.checkOnSave.overrideCommand": ["cross"]
+    }
 }

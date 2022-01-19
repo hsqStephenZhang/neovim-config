@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'neovim/nvim-lspconfig'
 Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
 
@@ -16,9 +17,7 @@ Plug 'rking/ag.vim'
 " language server config
 Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
-"Plug 'dense-analysis/ale'
 Plug 'rust-lang/rust.vim'
-Plug 'simrat39/rust-tools.nvim'
 Plug 'rhysd/vim-clang-format' 
 Plug 'racer-rust/vim-racer'
 Plug 'fatih/vim-go'
@@ -33,13 +32,14 @@ Plug 'rust-lang-nursery/rustfmt'
 " markddown
 Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
 Plug 'plasticboy/vim-markdown'
-let g:vim_markdown_math = 1
-let g:vim_markdown_folding_disabled = 1
 
 call plug#end()
 
-
 filetype plugin on
+
+let g:vim_markdown_math = 1
+let g:vim_markdown_folding_disabled = 1
+set clipboard+=unnamedplus
 
 " set ambiwidth=double
 
